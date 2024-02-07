@@ -19,3 +19,13 @@ if (soma >= 10);
 {
   console.log("resultado acima de 10");
 }
+
+var v1 = 10;
+var v2 = 3;
+console.log("---------------------------------");
+console.log("valores: v1=", v1, "| v2 =", v2);
+console.log("---------------------------------");
+console.log("resto da divisão interna: v1 % v2 =",v1 % v2);
+console.log("Exponenciação v1**v2 (v1 elevado a v2) =", v1 ** v2);
+
+

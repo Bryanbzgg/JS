@@ -36,3 +36,8 @@ console.log("");
 console.log("o preço final sera de:", preço-desconto);
 
 
+var velo=95
+var temp=3.5
+var dist=velo/temp
+console.log("a distancia percorrida é de:", dist,"km")
+

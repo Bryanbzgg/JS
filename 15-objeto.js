@@ -170,3 +170,55 @@ const animais = [
 for (const animal of animais) {
   animal.fazerBarulho();
 }
+
+console.log("");
+console.log("------------------------------------------------");
+console.log("------------------exemplos------------------");
+console.log("------------------------------------------------");
+console.log("");
+//criando uma classe retangulo
+
+class Retangulo 
+{
+
+  constructor(comprimento,largura)
+  {
+    this.comprimento = comprimento
+    this.largura = largura
+  }
+
+  obterperimetro()
+  {
+    return this.comprimento*2 + this.largura*2
+  }
+  obterarea(){
+    return this.comprimento*this.largura;
+  }
+  setcomprimento(novocomprimento)
+  {
+    this.comprimento = novocomprimento
+  }
+  setlargura(novalargura)
+  {
+    this.largura =novalargura
+  }
+}
+
+//criando objeto tipo retangulo
+var ret =new Retangulo(10,15)
+
+function displayRet(retangulo)
+{
+  console.table(retangulo)
+  console.log(`comprimento = ${retangulo.comprimento}`)
+  console.log(`largura = ${retangulo.largura}`)
+  console.log(`area = ${retangulo.obterarea()}`)
+  console.log(`perimetro = ${retangulo.obterperimetro()}`)
+
+}
+
+displayRet(ret)
+ret.setcomprimento(20)
+displayRet(ret)
+ret.setlargura(20)
+displayRet(ret)
